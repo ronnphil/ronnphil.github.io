@@ -338,7 +338,7 @@ function Card({ data, slot, sectionId }) {
 
 // ── App ───────────────────────────────────────────────────────────────────────
 function App() {
-  const [t, setTweak]   = useTweaks(TWEAK_DEFAULTS);
+  const t = TWEAK_DEFAULTS;
   const [mode, setMode] = useState("engineer");
   const [flipCount, setFlipCount] = useState(0);
   const [scrolled, setScrolled]   = useState(false);
@@ -415,30 +415,6 @@ function App() {
 
       <FullSections />
       {scrolled && <AvatarSidebar mode={mode} />}
-
-      <TweaksPanel>
-        <TweakSection label="Headline" />
-        <TweakText label="Title"    value={t.headline} onChange={(v)=>setTweak("headline",v)} />
-        <TweakText label="Subtitle" value={t.subtitle} onChange={(v)=>setTweak("subtitle",v)} />
-        <TweakSection label="Type" />
-        <TweakRadio label="Heading font" value={t.headingFont}
-          options={["Archivo Black","Syne","Space Grotesk"]}
-          onChange={(v)=>setTweak("headingFont",v)} />
-        <TweakSection label="Color" />
-        <TweakColor label="Accent" value={t.accent}
-          options={["#67568C","#3A3A5A","#2F6E6A","#8C4A6B"]}
-          onChange={(v)=>setTweak("accent",v)} />
-        <TweakColor label="Tape" value={t.tapeColor}
-          options={["#67568C","#FF6E6C","#E7C24B","#1A1626"]}
-          onChange={(v)=>setTweak("tapeColor",v)} />
-        <TweakSection label="Feel" />
-        <TweakSlider label="Card tilt" value={t.jitter} min={0} max={2} step={0.25} unit="×"
-          onChange={(v)=>setTweak("jitter",v)} />
-        <TweakRadio label="Motion" value={t.motion} options={["full","off"]}
-          onChange={(v)=>setTweak("motion",v)} />
-        <TweakToggle label="Dot grid" value={t.dots}
-          onChange={(v)=>{setTweak("dots",v);document.getElementById("root").classList.toggle("dots",v);}} />
-      </TweaksPanel>
     </div>
   );
 }
