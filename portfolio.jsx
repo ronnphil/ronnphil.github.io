@@ -72,29 +72,30 @@ function Spark({ name, size = 24, className = "" }) {
 
 // ── Modal detail content ───────────────────────────────────────────────────────
 const ZZ_ITEMS = [
-  { when: "Feb 2026 — Apr 2026", role: "AI Innovation Extern",       title: "The Externship — Pfizer",  desc: "Built intelligent data extraction pipelines using OCR (Tesseract, PaddleOCR) and RAG. Engineered a document retrieval engine via LlamaIndex with open-source LLMs (Mistral, Phi-2)." },
-  { when: "May 2026 — Present",  role: "Co-Founder & Engineer",      title: "Stealth Startup",          desc: "building homes?... 👀" },
-  { when: "May 2026 — Present",  role: "UI/UX Designer Intern",      title: "PM Accelerator",           desc: "Designing production-ready interfaces and high-fidelity specs across multi-disciplinary squads. Building Figma prototypes to simplify complex product flows." },
-  { when: "Jul 2024",            role: "Technology Assistant",       title: "University of Toronto",    desc: "Designed and delivered AI workshops on Neural Networks and Python to 25+ students. Increased technical engagement by 40% through hands-on experimentation." },
-  { when: "Sep 2022 — Jun 2023", role: "Python Instructor",          title: "STEM1 Coding & Robotics",  desc: "Taught weekly Python classes to 10+ students. Students hit an 85% average pass rate on internal assessments." },
-  { when: "Oct 2024 — Present",  role: "Barista & Guest Experience", title: "Starbucks",                desc: "Managing high-volume workflows and driving operational efficiency across 200+ orders a day during peak hours." },
+  { when: "Jul 2026 — Present",  role: "App Developer",              title: "20/20 Mission (Nonprofit)", logo: "assets/2020mission_logo.png", desc: "Details incoming..." },
+  { when: "May 2026 — Present",  role: "AI UI/UX Designer Intern · via PM Accelerator", title: "AdReady AI", logo: "assets/adready_ai_logo.jpg", desc: "Designed end-to-end UI/UX for a multi-agent video ad review system using OCR, transcription, and AI evaluation scoring. Iterated on 3 core product screens across multiple design sprints and contributed to design handoff documentation for engineering." },
+  { when: "May 2026 — Jun 2026", role: "AI Innovation Extern",       title: "Extern, Pfizer",           logo: "assets/extern_logo.png",       desc: "Built intelligent document extraction pipelines using OCR (Tesseract, PaddleOCR) and RAG via LlamaIndex with custom chunk tuning and open-source LLMs (Mistral, Phi-2). Benchmarked model architectures for accuracy and deployment suitability." },
+  { when: "May 2026 — Present",  role: "Founder & Engineer",         title: "Startup",      logoEmoji: "❓", desc: "building homes?... 👀" },
+  { when: "Jul 2024",            role: "Technology Assistant",       title: "University of Toronto",    logo: "assets/uoft_logo.jpg",         desc: "Designed and delivered AI workshops on Neural Networks and Python to 25+ students. Increased technical engagement by 40% through hands-on experimentation." },
+  { when: "Sep 2022 — Jun 2023", role: "Python Instructor",          title: "STEM1 Coding & Robotics",  logo: "assets/stem1_logo.jpg",        desc: "Taught weekly Python classes to 10+ students. Students hit an 85% average pass rate on internal assessments." },
+  { when: "Jul 2023 — Jul 2025", role: "Barista & Guest Experience", title: "Starbucks",                logo: "assets/starbucks_logo.png", logoZoom: 1.6, desc: "Managing high-volume workflows and driving operational efficiency across 200+ orders a day during peak hours." },
 ];
 
 const DETAILS = {
   projects: (
     <div className="proj-section">
-      <a className="proj-hero" href="https://github.com/ronnphil/Mon-35-EMG-Armband" target="_blank" rel="noopener noreferrer">
+      <a className="proj-hero" href="https://devpost.com/software/ignis-gsre19" target="_blank" rel="noopener noreferrer">
         <span className="proj-link-badge"><Icon name="external" size={14} /></span>
-        <div className="proj-hero-thumb"><Icon name="pulse" size={40} /></div>
+        <div className="proj-hero-thumb"><Icon name="shield" size={40} /></div>
         <div>
-          <h3 className="proj-hero-title">EMG Fitness Armband</h3>
-          <p className="proj-hero-desc">Real-time muscle monitoring wearable · ESP32 · Python · WebSockets · JS Dashboard · 95% accuracy · &lt;0.5s latency</p>
-          <span className="proj-hero-arr">→ View on GitHub</span>
+          <h3 className="proj-hero-title">IGNIS</h3>
+          <p className="proj-hero-desc">QNX-powered edge fire &amp; smoke detection · Raspberry Pi 5 · TensorFlow Lite · FastAPI · React dashboard · ElevenLabs voice AI — Hack the 6ix 2026</p>
+          <span className="proj-hero-arr">→ View on Devpost</span>
         </div>
       </a>
       <div className="proj-grid-2">
-        <a className="proj" href="#" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="cloud" /></div><div><h4>Atmosphere</h4><p>Bento-grid weather dashboard · dual personas · drag-and-drop · Figma</p></div></a>
-        <a className="proj" href="https://github.com/ronnphil/ML-Fraud-Detection-2.0" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="shield" /></div><div><h4>ML Fraud Detection 2.0</h4><p>6.3M transactions · 94% Recall · SMOTE · Streamlit</p></div></a>
+        <a className="proj" href="https://github.com/ronnphil/Mon-35-EMG-Armband" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="pulse" /></div><div><h4>EMG Fitness Armband</h4><p>Real-time muscle monitoring · ESP32 · 95% accuracy · &lt;0.5s latency</p></div></a>
+        <a className="proj" href="https://github.com/ronnphil/ML-Fraud-Detection-2.0" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="cpu" /></div><div><h4>ML Fraud Detection 2.0</h4><p>6.3M transactions · 94% Recall · SMOTE · Streamlit</p></div></a>
         <a className="proj" href="https://github.com/ronnphil/Stock-Market-Forecasting-Dashboard" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="trending" /></div><div><h4>AI Financial Dashboard</h4><p>LSTM forecasting · Python · Streamlit · Node.js · SQL</p></div></a>
         <a className="proj" href="https://github.com/ronnphil/To-Do-List-Tracker" target="_blank" rel="noopener noreferrer"><span className="proj-link-badge"><Icon name="external" size={14} /></span><div className="thumb"><Icon name="check" /></div><div><h4>Fastodo</h4><p>Zero-dependency task manager · Vanilla JS · localStorage</p></div></a>
       </div>
@@ -107,9 +108,9 @@ const DETAILS = {
         return (
           <div key={i} className="tl-zz-row">
             {left ? (
-              <><div className="tl-zz-box"><div className="when">{item.when}</div><h4>{item.title}</h4><div style={{fontSize:12,fontWeight:600,opacity:.65,marginBottom:4}}>{item.role}</div><p>{item.desc}</p></div><div className="tl-zz-dot" /><div className="tl-zz-spacer" /></>
+              <><div className="tl-zz-box">{(item.logo || item.logoEmoji) && <span className="tl-zz-logo">{item.logo ? <img src={item.logo} alt="" style={item.logoZoom ? { transform: `scale(${item.logoZoom})` } : undefined} /> : item.logoEmoji}</span>}<div className="when">{item.when}</div><h4>{item.title}</h4><div style={{fontSize:12,fontWeight:600,opacity:.65,marginBottom:4}}>{item.role}</div><p>{item.desc}</p></div><div className="tl-zz-dot" /><div className="tl-zz-spacer" /></>
             ) : (
-              <><div className="tl-zz-spacer" /><div className="tl-zz-dot" /><div className="tl-zz-box"><div className="when">{item.when}</div><h4>{item.title}</h4><div style={{fontSize:12,fontWeight:600,opacity:.65,marginBottom:4}}>{item.role}</div><p>{item.desc}</p></div></>
+              <><div className="tl-zz-spacer" /><div className="tl-zz-dot" /><div className="tl-zz-box">{(item.logo || item.logoEmoji) && <span className="tl-zz-logo">{item.logo ? <img src={item.logo} alt="" style={item.logoZoom ? { transform: `scale(${item.logoZoom})` } : undefined} /> : item.logoEmoji}</span>}<div className="when">{item.when}</div><h4>{item.title}</h4><div style={{fontSize:12,fontWeight:600,opacity:.65,marginBottom:4}}>{item.role}</div><p>{item.desc}</p></div></>
             )}
           </div>
         );
@@ -152,7 +153,7 @@ const DETAILS = {
             I'm an engineer who cares about taking complex systems and making them feel simple, visual, and intuitive.
           </p>
           <ul className="detail-list" style={{ marginTop: 14 }}>
-            <li>Co-founding a stealth startup — P2P housing marketplace, in production</li>
+            <li>Co-founding something new — can't say more yet 👀</li>
             <li>AI Innovation Extern · Pfizer · built OCR + RAG pipelines</li>
             <li>Targeting: ML Engineer · Software Developer · Data Analyst co-ops</li>
           </ul>
@@ -173,7 +174,7 @@ const DETAILS = {
         <div className="about-block">
           <div className="skill-card-head"><Icon name="target" size={20} className="skill-icon" /> Hobbies</div>
           <div className="chips chips--scattered">
-            {["🏀 Basketball","🏸 Badminton","🏓 Table Tennis","🍵 Chai addict","🔧 Hardware Tinkering","🎮 Gaming","🎵 Music"].map((c,i) =>
+            {["🏀 Basketball","🏸 Badminton","🏓 Table Tennis","🍵 Chai addict","🔧 Hardware Tinkering","🎮 Gaming","🎧 Drake"].map((c,i) =>
               <span className="chip" key={i} style={{ transform: `rotate(${i % 2 === 0 ? -2.5 : 1.8}deg)`, fontSize: i % 3 === 0 ? 15 : 14 }}>{c}</span>
             )}
           </div>
