@@ -218,8 +218,8 @@ const MODES = {
     label: "ENGINEER",
     hero:   { kick: "mode · engineer", tag: "I build things end-to-end." },
     cards: [
-      { kind: "projects",   doodle: "assets/layer.png",      title: "PROJECTS",   feature: true,  summary: "Wearables · fraud detection · SaaS" },
-      { kind: "experience", doodle: "assets/chart.png",        title: "EXPERIENCE", feature: false, summary: "Pfizer · Stealth · PM Accelerator" },
+      { kind: "projects",   doodle: "assets/layer.png",      title: "PROJECTS",   feature: true,  summary: "IGNIS · fraud detection · SaaS" },
+      { kind: "experience", doodle: "assets/chart.png",        title: "EXPERIENCE", feature: false, summary: "AdReady AI · Pfizer · 20/20 Mission" },
       { kind: "skills",     doodle: "assets/setting.png",     title: "SKILLS",     feature: false, summary: "AI/ML · React · Embedded · Cloud" },
       { kind: "contact",    doodle: "assets/chat.png",     title: "CONTACT",    feature: false, summary: "Available Summer 2027 →" },
     ],
